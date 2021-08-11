@@ -78,6 +78,13 @@
             border-radius: 3px;
         }
         
+        .col-md-3 button p a {
+            font-size: 12px;
+            margin-bottom: 0px;
+            color: white;
+            font-weight: 600;
+        }
+        
         .col-md-3 button p {
             font-size: 12px;
             margin-bottom: 0px;
@@ -129,6 +136,13 @@
         .imt .com {
             border-bottom: 1px solid #575656;
             padding-top: 10px;
+        }
+        
+        .dropdown-divider {
+            height: 0;
+            margin: .5rem 0;
+            overflow: hidden;
+            border-top: 0px solid #e9ecef;
         }
         /*Ipad ngang(1024 x 768)*/
         
