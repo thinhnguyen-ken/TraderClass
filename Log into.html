@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="./css/menu-mobile.css" rel="stylesheet">
+    <link href="./css/animate.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/Log into.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--Icon-->
+    <title>Log into</title>
+</head>
+
+<body>
+    <div id="sidebar">
+        <nav id="mobile-nav">
+            <ul>
+                <li class="nav-item">
+                    <a href="./index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class=" dropdown-btn" href="#">
+                        All Categories <i class="bi bi-chevron-down"></i>
+                    </a>
+                    <div class="dropdown-container" style="display: none;">
+                        <a href="./My Course.html">My Course</a>
+                        <a href="./Course Introduction.html">Course Introduction</a>
+                        <a href="./All Class.html">All Class</a>
+                        <a href="./Contact.html">Contact</a>
+                        <a href="./Privacy.html">Course Introduction</a>
+                        <a href="./Terms.html">Privacy</a>
+                        <a href="./Return&Refund Policy.html">Return & Refund Policy</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class=" dropdown-btn" href="#">
+                        <i class="bi bi-search"></i> Search
+                    </a>
+                    <div class="dropdown-container" style="display: none;">
+                        <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+                        <a href="#">About</a>
+                        <a href="#">Base</a>
+                        <a href="#">Blog</a>
+                        <a href="#">Contact</a>
+                        <a href="#">Custom</a>
+                        <a href="#">Support</a>
+                        <a href="#">Tools</a>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a href="./Invite friends.html"> <img class="friend" src="./images/add.png" width="16px" height="16px" style="margin-top: -4px;" alt=""> Invite friends </a>
+                </li>
+                <li class="nav-item">
+                    <a href="./Log into.html"> <i class="fas fa-shopping-cart"></i> Access all</a>
+                </li>
+                <li class="nav-item"><a href="./account.html">Account information</a></li>
+                <li class="nav-item"> <a href="#">Log out</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="header">
+        <div class="header_bottom">
+            <div class="container">
+                <div class="mai">
+                    <div class="logo">
+                        <a href="./index.html" title="">
+                            <!--img src="images/logo.svg" alt="logo" /-->
+                            TraderClass
+                        </a>
+                    </div>
+                    <div class="menu">
+                        <ul>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" style="padding-top: 0px;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+                                    All Categories <i class="bi bi-chevron-down"></i>
+                          </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a style="color: black;" class="dropdown-item" href="./My Course.html">My Course</a>
+                                    <a style="color: black;" class="dropdown-item" href="./Course Introduction.html">Course Introduction</a>
+                                    <a style="color: black;" class="dropdown-item" href="./All Class.html">All Class</a>
+                                    <a style="color: black;" class="dropdown-item" href="./Contact.html">Contact</a>
+                                    <a style="color: black;" class="dropdown-item" href="./Privacy.html">Course Introduction</a>
+                                    <a style="color: black;" class="dropdown-item" href="./Terms.html">Privacy</a>
+                                    <a style="color: black;" class="dropdown-item" href="./Return&Refund Policy.html">Return & Refund Policy</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" style="padding-top: 0px;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+                                    <i class="bi bi-search"></i> Search
+                                </a>
+                                <div class="dropdown-menu search" aria-labelledby="navbarDropdown">
+                                    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+                                    <a class="dropdown-item" href="#">About <i class="fas fa-chevron-right" style="float: right;"></i></a>
+                                    <a class="dropdown-item" href="#">Base <i class="fas fa-chevron-right" style="float: right;"></i></a>
+                                    <a class="dropdown-item" href="#">Blog <i class="fas fa-chevron-right" style="float: right;"></i></a>
+                                    <a class="dropdown-item" href="#">Contact <i class="fas fa-chevron-right" style="float: right;"></i></a>
+                                    <a class="dropdown-item" href="#">Custom <i class="fas fa-chevron-right" style="float: right;"></i></a>
+                                    <a class="dropdown-item" href="#">Support <i class="fas fa-chevron-right" style="float: right;"></i></a>
+                                    <a class="dropdown-item" href="#">Tools <i class="fas fa-chevron-right" style="float: right;"></i></a>
+                                </div>
+                            </li>
+                            <li>
+                                <a style="padding-top: 0px;" class="nav-link" href="./Invite friends.html"> <img class="friend" src="./images/add-friend.png" width="16px" height="16px" style="margin-top: -4px;" alt=""> Invite friends </a>
+                            </li>
+                            <li>
+                                <a style="padding-top: 0px;" class="nav-link" href="./Log into.html"> <i class="fas fa-shopping-cart"></i> Access all</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="right_nav">
+                        <a class="nav-link" style="padding-top: 0px;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+                            <img src="./svg/avt.svg" alt="">
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a style="color: black;" class="dropdown-item" href="./account.html">Account information</a>
+                            <a style="color: black;" class="dropdown-item" href="#">Log out</a>
+                        </div>
+                        <!-- <div class="dropdown">
+                            <a style="padding-top: 0px;" class="dropbtn" href="#"><img src="./svg/avt.svg" alt=""></a>
+                            <div class="dropdown-content">
+                                <a href="./account.html">Account information</a>
+                                <a href="#">Log out</a>
+                            </div>
+                        </div> -->
+                    </div>
+                    <a class="toggle" id="btn-toggle-sidebar">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <path fill="currentColor"
+                                d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z">
+                            </path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="black">
+            <p>Complete your payment for instant access!</p>
+        </div>
+    </div>
+    <div class="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="whitee">
+                        <div class="pan">
+                            <div class="order">
+                                <div class="un">
+                                    <p id="yo">Your order</p>
+                                    <p id="yo2">Unlimited access all year All current and upcoming courses.</p>
+                                </div>
+                                <div class="buy">
+                                    <p id="price">990.000 đ</p>
+                                    <p id="pricee"><strike id="pre" style="color: #A7A9AC;">4.000.000 ₫</strike><br><span id="sav">Savings: 75%</span>
+
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="dis">
+                                <div id="we"><i class="fas fa-check"></i>
+                                    <p> 75% discount. Opportunity to learn from Billion Dollar Founders (Mr. Nguyen Duy Hung - SSI & Mr. Le Hong Minh - VNG). Deadline 7/31</p>
+                                </div>
+                                <div id="we">
+                                    <i class="fas fa-check"></i>
+                                    <p> New courses from excellent people are produced every month
+                                    </p>
+                                </div>
+                                <div id="we">
+                                    <i class="fas fa-check"></i>
+                                    <p> Unlimited access to all courses
+                                    </p>
+                                </div>
+                                <div id="we">
+                                    <i class="fas fa-check"></i>
+                                    <p> Live Q&A anytime
+                                    </p>
+                                </div>
+                                <div id="we">
+                                    <i class="fas fa-check"></i>
+                                    <p> Exclusive community, quality</p>
+                                </div>
+                            </div>
+                            <div class="cou">
+                                <div id="is">
+                                    <img src="./images/box.png" alt="">
+                                    <p>
+                                        Discount
+                                    </p>
+                                </div>
+                                <div id="choo">
+                                    <p>CHOOSE YOUR OFFER</p>
+                                </div>
+                            </div>
+                            <div class="total">
+                                <div id="tot">
+                                    <p>TOTAL</p>
+                                </div>
+                                <div id="se">
+                                    <p>990.000 đ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="whitee">
+                        <div class="pann">
+                            <div class="ve">
+                                <div>
+                                    <p id="have">Have Questions? Need help?</p>
+                                    <p>028 3822 0814 </p>
+                                    <p>Mon - Fri 9:30am - 6pm</p>
+                                </div>
+                                <div>
+                                    <button>More information</button>
+                                </div>
+                            </div>
+                            <div>
+                                <p id="secu">100% secure online payment method</p>
+                                <div class="bue">
+                                    <p id="pric"><i class="fa fa-lock" aria-hidden="true"></i>&nbsp;100% safe</p>
+                                    <p id="pric2"><i class="bi bi-shield-shaded"></i>&nbsp;SSL Security</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="whitee">
+                        <div class="pan">
+                            <div class="orde">
+                                <div class="unn">
+                                    <p id="yo">Payment methods</p>
+                                </div>
+                                <div class="buyy">
+                                    <p id="pric"><i class="fa fa-lock" aria-hidden="true"></i>&nbsp;100% safe</p>
+                                    <p id="pric2"><i class="bi bi-shield-shaded"></i>&nbsp;SSL Security</p>
+                                </div>
+                            </div>
+                            <div class="diss">
+                                <div class="cre">
+                                    <div class="dot" onclick="currentSlide(1)">
+                                        <p>CREDIT</p>
+                                        <img src="./svg/logo-mastercard-mobile.svg" alt="">
+                                    </div>
+                                    <div class="dot" onclick="currentSlide(2)">
+                                        <p>ATM</p>
+                                        <img id="atm" src="./images/atm.png" alt="">
+                                    </div>
+                                    <div class="dot" onclick="currentSlide(3)">
+                                        <p>MOMO</p>
+                                        <img id="momo" src="./images/momo.png" alt="">
+                                    </div>
+                                    <div class="dot" onclick="currentSlide(4)">
+                                        <p>BANK</p>
+                                        <svg width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10.8571 0L0 5.71429V8H21.7143V5.71429L10.8571 0ZM16 10.2857V18.2857H19.4286V10.2857H16ZM0 24H21.7143V20.5714H0V24ZM9.14286 10.2857V18.2857H12.5714V10.2857H9.14286ZM2.28571 10.2857V18.2857H5.71429V10.2857H2.28571Z" fill="black"/>
+                                            </svg>
+                                    </div>
+                                </div>
+                                <div class="cree">
+                                    <div class="dott"></div>
+                                    <div class="dott"></div>
+                                    <div class="dott"></div>
+                                    <div class="dott"></div>
+                                </div>
+                            </div>
+                            <div class="mySlides">
+                                <div class="for">
+                                    <div class="form-group">
+                                        <label>Card number</label>
+                                        <input type="number" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Account name</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="fr">
+                                        <div id="let" class="form-group">
+                                            <label>Expiration date</label>
+                                            <input type="date" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>CCV/CVV</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Address</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>City</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Nationality</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="be">
+                                    <p id="will">You will be redirected to CyberSource to complete your purchase</p>
+                                    <p id="to">To ensure safety, your card information is encrypted and securely stored by CyberSource, the world's largest payment management company (under VISA organization) VietNam Master does not store your card directly.</p>
+                                    <p id="to">By completing your order, you agree to our <span><a style="color: #EF8D21" href="./Privacy.html">Privacy Policy</a></span> and <span><a href="./Terms.html" style="color: #EF8D21">Terms of Service.</a> </span></p>
+                                </div>
+                                <div class="pay">
+                                    <div><button>PAYMENT</button></div>
+                                </div>
+                            </div>
+                            <div class="mySlides">
+                                <div class="bankk">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div>
+                                                <img src="./svg/vietcombank.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div>
+                                                <img src="./svg/acb.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div>
+                                                <img src="./svg/vpbank.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div>
+                                                <img src="./svg/sacombank.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div>
+                                                <img src="./svg/abbank.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div>
+                                                <img src="./svg/techcombank.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div>
+                                                <img src="./svg/aribank.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div>
+                                                <img src="./svg/hsbc.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div>
+                                                <img src="./svg/baoviet.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div>
+                                                <img src="./svg/lienviet.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div>
+                                                <img src="./svg/bidv.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div>
+                                                <img src="./svg/mb.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div>
+                                                <img src="./svg/shb.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div>
+                                                <img src="" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div>
+                                                <img src="" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div>
+                                                <img src="" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div>
+                                                <img src="" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div>
+                                                <img src="" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div>
+                                                <img src="" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div>
+                                                <img src="" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div>
+                                                <img src="" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div>
+                                                <img src="" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div>
+                                                <img src="" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div>
+                                                <img src="" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="be">
+                                    <p id="to">By completing your order, you agree to our <span><a style="color: #EF8D21" href="./Privacy.html">Privacy Policy</a></span> and <span><a href="./Terms.html" style="color: #EF8D21">Terms of Service.</a> </span></p>
+                                </div>
+                                <div class="pay">
+                                    <div><button>PAYMENT</button></div>
+                                </div>
+                            </div>
+                            <div class="mySlides">
+                                <div class="ban">
+                                    <p>You will be redirected to Momo to complete your purchase</p>
+                                </div>
+                                <div class="be">
+                                    <p id="to">By completing your order, you agree to our <span><a style="color: #EF8D21" href="./Privacy.html">Privacy Policy</a></span> and <span><a href="./Terms.html" style="color: #EF8D21">Terms of Service.</a> </span></p>
+                                </div>
+                                <div class="pay">
+                                    <div><button>PAYMENT</button></div>
+                                </div>
+                            </div>
+                            <div class="mySlides">
+                                <div class="ban">
+                                    <p id="tran">Transfer</p>
+                                    <p>Guarantee 100% safety when paying by bank transfer. Please enter your information and transfer to the account below. We will contact you as soon as possible to confirm and activate your account</p>
+                                    <p>Account Name: Onicorn Communication Joint Stock Company</p>
+                                    <p>Bank: VP Bank Ben Thanh branch</p>
+                                    <p>Account number: 220546039</p>
+                                    <p>Transfer syntax: Name + Email (if any) + Phone number + Course you want to register.</p>
+                                </div>
+                                <div class="fo">
+                                    <p id="tran">Your information</p>
+                                    <div class="form-group">
+                                        <label>Full name</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Phone number</label>
+                                        <div class="suu">
+                                            <label for="img">
+                                                <img src="./images/laco.png" id="img">
+                                                <i class="bi bi-caret-down-fill"></i>
+                                             </label>
+                                            <input id="in" type="number" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Email</label>
+                                        <input type="email" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="be">
+                                    <p id="to">By completing your order, you agree to our <span><a style="color: #EF8D21" href="./Privacy.html">Privacy Policy</a></span> and <span><a href="./Terms.html" style="color: #EF8D21">Terms of Service.</a> </span></p>
+                                </div>
+                                <div class="pay">
+                                    <div><button>PAYMENT</button></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="text-lg-start text-muted">
+            <section class="" style="
+            padding-top: 5px;
+            background-color: #111319;
+        ">
+                <div class="container text-md-start mt-5">
+                    <div class="row mt-3">
+                        <div class="col-md-3 ">
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                ONICORN MEDIA JOINT STOCK COMPANY
+                            </h6>
+                            <p>
+                                Enterprise code: 0316690536
+                            </p>
+                            <p>Founding date: 2021-01-27</p>
+                            <p>Active taxpayers (who have been granted registration certificates)</p>
+                            <p><img src="./svg/icondangki.svg" alt=""></p>
+                        </div>
+                        <div class="col-md-4 mx-auto">
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                <p style="
+                                opacity: 0;
+                            "> padding</p>
+                            </h6>
+                            <p>
+                                <i class="bi bi-geo-alt-fill"></i> 9 Floor, Vien Dong Building, 14 PhanTon,Da Kao, 1 District, Ho Chi Minh City
+                            </p>
+                            <p>
+                                <i class="bi bi-telephone-fill"></i> +976 1244 6785
+                            </p>
+                            <p>
+                                <i class="bi bi-envelope-fill"></i> hr@onicorn.vn
+                            </p>
+                            <div class="IconConnec">
+                                <li><a href="http://www.facebook.com/"><i class="bi bi-facebook"></i></a></li>
+                                <li><a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a></li>
+                                <li><a href="https://www.youtube.com/"><i class="bi bi-youtube"></i></a></li>
+                            </div>
+                        </div>
+                        <div class="col-md-2 mx-auto">
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                About
+                            </h6>
+                            <p>
+                                <a href="index.html" class="text-reset">Home</a>
+                            </p>
+                            <p>
+                                <a href="./All Class.html" class="text-reset">All Classes</a>
+                            </p>
+                            <p>
+                                <a href="./Contact.html" class="text-reset">Contact</a>
+                            </p>
+                            <p>
+                                <a href="./Privacy.html" class="text-reset">Privacy</a>
+                            </p>
+                            <p>
+                                <a href="./Terms.html" class="text-reset">Terms</a>
+                            </p>
+                            <p>
+                                <a href="./Return&Refund Policy.html" class="text-reset">Return & Refund Policy</a>
+                            </p>
+                        </div>
+                        <div class="col-md-3 ">
+
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Download
+                            </h6>
+                            <a class="app-btn blu flex vert" href="http:apple.com">
+                                <i class="fab fa-apple" style="
+                                margin-left: -20px;
+                            "></i>
+                                <p>Available on the <br/> <span class="big-txt">App Store</span></p>
+                            </a>
+
+                            <a class="app-btn blu flex vert" href="http:google.com">
+                                <i style="
+                                margin-bottom: 3px;
+                            "><img src="./images/CHPlay.png" alt=""></i>
+                                <p>Get it on <br/> <span class="big-txt">Google Play</span></p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="container" style="padding-bottom: 50px;">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <button class="lang"><i class="bi bi-globe" style="margin-left: -10px;margin-right: 10px;"></i> ENGLISH <i class="bi bi-chevron-down" style="margin-left: 10px;margin-right: -10px;"></i></button>
+                        </div>
+                    </div>
+                    <p class="trader"> © 2021 TraderClass</p>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="./js/loginto.js"></script>
+    <script src="./js/teacher.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script src="./js/wow.min.js" type="text/javascript"></script>
+    <script src="./vendor/OwlCarousel2-2.3.4/dist/owl.carousel.min.js" type="text/javascript"></script>
+    <script src="./js/app.js?v=1" type="text/javascript"></script>
+</body>
+
+</html>
