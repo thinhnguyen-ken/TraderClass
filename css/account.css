@@ -466,6 +466,38 @@ footer .copy {
 }
 
 
+/* iPhone X max-width 375px */
+
+@media screen and (max-width: 375px) {
+    .main span,
+    .main a,
+    #email,
+    #password,
+    #google,
+    #facebook {
+        margin-left: -38px;
+    }
+    .member {
+        max-width: 300px;
+    }
+    .member .col-md-3 {
+        max-width: 300px;
+    }
+    .span.member {
+        left: 14%;
+    }
+    .tab-pane h6 {
+        margin-left: 7%;
+    }
+    .main .col-md-7 {
+        min-width: 375px;
+    }
+    .lbo {
+        max-width: 375px;
+    }
+}
+
+
 /*Iphone(480 x 640)*/
 
 @media screen and (max-width: 320px) {
