@@ -153,15 +153,15 @@
                 <div style="display: grid;"><span id="a">Ted Nguyen</span> <span id="b">-</span> <span id="c">Teacher Crypto Trader</span></div>
                 <div class="info">
                     <div class="share">
-                        <a href="./Course Introduction.html">
+                        <a href="#" onclick="lightbox_open('./mp4/Teacher1.mp4');">
                             <img src="./images/tra.png" alt="">
                             <p>TRAILER</p>
                         </a>
-                        <a href="#">
+                        <a href="#" onclick="lightbox_open('./mp4/Teacher2.mp4');">
                             <img src="./images/sam.png" alt="">
                             <p>SAMPLE</p>
                         </a>
-                        <a href="#">
+                        <a href="#" onclick="share_open()">
                             <img src="./images/share.png" alt="">
                             <p>SHARE</p>
                         </a>
@@ -174,9 +174,9 @@
                     </div>
                 </div>
                 <div class="lin">
-                    <a href="#">Class Info</a>
-                    <a href="#">Related</a>
-                    <a href="#">FAQ</a>
+                    <a href="#money" id="1" onclick="hover(1)">Class Info</a>
+                    <a href="#Related" id="2" onclick="hover(2)">Related</a>
+                    <a href="#FAQ" id="3" onclick="hover(3)">FAQ</a>
                 </div>
 
             </div>
@@ -200,11 +200,11 @@
                 <div class="col-md-4">
                     <div class="all">
                         <div>
-                            <div class="pla"><img src="./images/play.png" alt=""> <a href="#">Class Trailer</a></div>
+                            <div class="pla" onclick="nextvideo('./mp4/Teacher1.mp4')"><img style="margin-right: 5px;" src="./images/play.png" alt="">Class Trailer</div>
 
                         </div>
                         <div>
-                            <div class="pla"><img src="./images/play.png" alt=""> <a href="#">Class Sample</a></div>
+                            <div class="pla" onclick="nextvideo('./mp4/Teacher2.mp4')"><img style="margin-right: 5px;" src="./images/play.png" alt="">Class Sample</div>
                         </div>
                     </div>
                     <div class="tit">
@@ -261,7 +261,7 @@
                     </div>
                 </div>
             </div>
-            <div class="member">
+            <div class="member" id="Related">
                 <p id="memb">Members who liked this class also liked</p>
                 <div class="row">
                     <div class="col-md-2">
@@ -334,7 +334,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row" id="FAQ">
                     <div class="col-md-6">
                         <div class="tee">
                             <p style="font-size: 30px;
@@ -489,7 +489,30 @@
             </div>
         </div>
     </div>
-
+    <div id="light">
+        <a class="boxclose" id="boxclose" onclick="lightbox_close();"></a>
+        <video id="VisaChipCardVideo" controls>
+            <source src="./mp4/Teacher1.mp4" type="video/mp4">
+          </video>
+    </div>
+    <div id="share">
+        <a class="boxclose" id="boxclose" onclick="lightbox_close();"></a>
+        <div id="share2">
+            <div id="share3">
+                <p>Share this class with your friends</p>
+            </div>
+            <div id="share4">
+                <a href="https://www.facebook.com/"><img src="./images/icon-facebook.png" alt=""></a>
+                <a href="https://www.messenger.com/"><img src="./images/brand_facebook_messenger_icon_157342.png" alt=""></a>
+                <a href="https://twitter.com/?lang=vi"><img src="./images/free-twitter-logo-icon-2429-thumb.png" alt=""></a>
+                <a href="https://mail.google.com/mail/u/0/"><img src="./images/512px-Gmail_icon_(2020).svg.png" alt=""></a>
+            </div>
+            <div class="static">
+                <input type="text" id="copyTarget" readonly="readonly" value="https://traderclass.vn/class/TedNguyen/"> <button id="copyButton"><i class="fas fa-copy">          Copy</i></button><br><br>
+            </div>
+        </div>
+    </div>
+    <div id="fade" onClick="lightbox_close();"></div>
     <div class="footer">
         <div class="text-lg-start text-muted">
             <section class="" style="
