@@ -46,7 +46,6 @@
     margin-left: 4px;
     width: 122px;
     text-align: center;
-    margin-top: 12px;
 }
 
 #price {
@@ -498,10 +497,10 @@
         font-size: 14px;
     }
     .un img {
-        width: 40%;
+        width: 35%;
     }
     .buy {
-        width: 90px;
+        width: 80px;
     }
     #price {
         font-size: 12px;
@@ -522,8 +521,12 @@
         margin-right: 14px;
     }
     .un #yo2 {
-        font-size: 13px;
-        font-weight: 500;
+        font-size: 11px;
+        font-weight: 700;
+    }
+    #cl_name {
+        font-weight: 400;
+        font-size: 12px;
     }
     #pre {
         color: #A7A9AC;
@@ -565,7 +568,7 @@
     }
     #sav {
         color: red;
-        font-size: 11px;
+        font-size: 10px;
         font-weight: bold;
     }
     #choo {
@@ -689,6 +692,58 @@
         width: 40%;
         padding-bottom: -10px;
     }
+    .buy {
+        width: 95px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .un #yo2,
+    #price {
+        font-size: 14px;
+    }
+    #cl_name {
+        font-size: 12px;
+    }
+    #pre,
+    #sav {
+        font-size: 11px;
+    }
+    #is {
+        width: 62%;
+        display: flex;
+        font-size: 16px;
+    }
+    .buyy p {
+        background-color: #EF8D21;
+        padding: 4px;
+        border-radius: 5px;
+        margin-right: 5px;
+        font-size: 9px;
+        margin-bottom: 20px;
+    }
+    .suu img {
+        width: 48%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .un #yo2,
+    #price {
+        font-size: 12px;
+    }
+    #is {
+        width: 56%;
+    }
+    .buyy p {
+        font-size: 7px;
+    }
+    .suu img {
+        width: 38%;
+    }
+    .suu label {
+        width: 35%;
+    }
 }
 
 
@@ -724,10 +779,11 @@
         width: 34%;
     }
     .un #yo2 {
-        font-size: 14px;
+        font-size: 13px;
     }
     .buy {
-        margin-left: 0;
+        width: 95px;
+        margin-left: 0px;
     }
     #cl_name {
         font-size: 13px;
@@ -832,12 +888,12 @@
         border-top-right-radius: 3px;
     }
     #pre {
-        font-size: 8px;
+        font-size: 10px;
         font-weight: bold;
     }
     #sav {
         color: red;
-        font-size: 7px;
+        font-size: 10px;
         font-weight: bold;
     }
     .un #yo {
@@ -854,7 +910,10 @@
     }
     .un #yo2 {
         font-size: 8px;
-        font-weight: 500;
+        font-weight: 700;
+    }
+    #cl_name {
+        font-size: 10px;
     }
     .buy {
         margin-left: 0;
@@ -904,18 +963,11 @@
         border-radius: 5px;
         margin-right: 5px;
         width: 50%;
-        font-size: 8px;
+        font-size: 7px;
     }
     .unn #yo {
-        font-size: 9px;
+        font-size: 8px;
         font-weight: 700;
-    }
-    .buyy p {
-        background-color: #EF8D21;
-        padding: 4px;
-        border-radius: 5px;
-        margin-right: 5px;
-        font-size: 4px;
     }
     .buyy p {
         background-color: #EF8D21;
@@ -923,7 +975,7 @@
         padding-top: 3px;
         border-radius: 2px;
         margin-right: 1px;
-        font-size: 6px;
+        font-size: 5px;
     }
     .pan {
         padding: 20px;
@@ -958,7 +1010,7 @@
         padding-top: 15px;
     }
     .suu img {
-        width: 50%;
+        width: 40%;
     }
     .bankk {
         background-color: #F2F2F2;

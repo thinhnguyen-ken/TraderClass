@@ -435,6 +435,7 @@
 #pum .row .col-md-6 p {
     font-size: 15px;
     color: white;
+    width: 95%;
 }
 
 .upnext {
@@ -841,6 +842,80 @@
     #share {
         left: 20%;
         width: 62%;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    #a {
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .info {
+        padding: 15px 50px 20px 50px;
+    }
+    .text-center {
+        top: 130%;
+        left: 30%;
+    }
+    #light {
+        top: 38%;
+        left: 78%;
+    }
+    #share {
+        left: 12%;
+        width: 76%;
+    }
+    #share {
+        left: 12%;
+        width: 76%;
+        top: 15%;
+    }
+    #share2 a img {
+        width: 20%;
+    }
+    #VisaChipCardVideo {
+        width: 370px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    #a {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    #c {
+        font-size: 9px;
+        font-weight: 500;
+    }
+    .info {
+        padding: 20px 50px 20px 50px;
+        padding-bottom: 0px;
+    }
+    .lin {
+        border-bottom: 2px solid #323741;
+        height: 44px;
+        margin-bottom: 55px;
+        margin-left: 4%;
+        width: 92%;
+    }
+    .text-center {
+        top: 149%;
+        left: 28%;
+    }
+    #VisaChipCardVideo {
+        width: 353px;
+    }
+    #light {
+        top: 38%;
+        left: 83%;
+    }
+    #share {
+        left: 14%;
+        width: 72%;
+        top: 10%;
+    }
+    #share2 a img {
+        width: 22%;
     }
 }
 

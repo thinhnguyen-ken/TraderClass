@@ -140,6 +140,28 @@ button p i {
     }
 }
 
+@media screen and (max-width: 414px) {
+    .a {
+        font-weight: bold;
+        font-size: 40px;
+    }
+    .c {
+        font-size: 20px;
+        font-weight: 500;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .a {
+        font-weight: bold;
+        font-size: 36px;
+    }
+    .c {
+        font-size: 18px;
+        font-weight: 500;
+    }
+}
+
 
 /*Iphone(480 x 640)*/
 
