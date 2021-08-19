@@ -27,6 +27,25 @@ function showSlides(n) {
     dots[slideIndex - 1].className += " active";
     dotts[slideIndex - 1].className += " active";
 }
+
+function paymen(int) {
+    if (int == 4) {
+        window.location.href = "Payment Bank.html";
+        return;
+    }
+    if (int == 3) {
+        window.location.href = "Payment Momo.html";
+        return;
+    }
+    if (int == 2) {
+        window.location.href = "Payment ATM.html";
+        return;
+    }
+    if (int == 1) {
+        return;
+    }
+}
+
 var a = 1;
 
 function tick(int) {

@@ -662,7 +662,7 @@
         width: 50px;
     }
     .text-center {
-        top: 108%;
+        top: 122%;
         left: 36%;
     }
     .img {
@@ -798,7 +798,7 @@
         margin-bottom: 62%;
     }
     .text-center {
-        top: 128%;
+        top: 150%;
         left: 32%;
     }
     .lin a {
@@ -855,7 +855,6 @@
         padding: 15px 50px 20px 50px;
     }
     .text-center {
-        top: 130%;
         left: 30%;
     }
     #light {
@@ -900,7 +899,7 @@
         width: 92%;
     }
     .text-center {
-        top: 149%;
+        top: 162%;
         left: 28%;
     }
     #VisaChipCardVideo {
@@ -925,7 +924,7 @@
 
 @media screen and (max-width: 320px) {
     .text-center {
-        top: 165%;
+        top: 211%;
         left: 34%;
     }
     .path p {
@@ -960,6 +959,7 @@
         border-bottom: 2px solid #323741;
         height: 44px;
         width: 100%;
+        margin-left: 0;
     }
     .playpause img {
         transform: translate(0px, 207%);
@@ -1051,7 +1051,7 @@
         padding-top: 17px;
     }
     .text-center {
-        top: 188%;
+        top: 260%;
         left: 33%;
     }
     .img {

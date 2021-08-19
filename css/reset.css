@@ -153,3 +153,85 @@ input[type=checkbox]:checked:after {
     opacity: .80;
     filter: alpha(opacity=80);
 }
+
+@media screen and (max-width: 768px) {
+    #share {
+        position: absolute;
+        top: 20%;
+        left: 23%;
+        max-width: 100%;
+        max-height: 100%;
+        width: 54%;
+        background: #FFF;
+        z-index: 1002;
+        overflow: visible;
+        text-align: center;
+        border-radius: 5px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #share {
+        position: absolute;
+        top: 20%;
+        left: 17%;
+        max-width: 100%;
+        max-height: 100%;
+        width: 66%;
+        background: #FFF;
+        z-index: 1002;
+        overflow: visible;
+        text-align: center;
+        border-radius: 5px;
+    }
+    #share2 {
+        padding: 36px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    #share {
+        position: absolute;
+        top: 20%;
+        left: 14%;
+        max-width: 100%;
+        max-height: 100%;
+        width: 72%;
+        background: #FFF;
+        z-index: 1002;
+        overflow: visible;
+        text-align: center;
+        border-radius: 5px;
+    }
+}
+
+@media screen and (max-width: 375px) {}
+
+
+/*Iphone(480 x 640)*/
+
+@media screen and (max-width: 320px) {
+    #share3 {
+        font-size: 17px;
+        width: 100%;
+        font-weight: 600;
+        font-family: sans-serif;
+        color: #20f47d;
+        margin-bottom: 50px;
+    }
+    #share4 a {
+        color: black;
+        font-size: 13px;
+        font-weight: 600;
+        font-family: sans-serif;
+    }
+}
+
+
+/*Smart phone nhỏ*/
+
+@media screen and (max-width: 240px) {
+    #share2 {
+        padding: 20px;
+    }
+}
