@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+    <title></title>
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta property="og:url" itemprop="url" content="">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+    <meta property="og:image:alt" content="">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./vendor/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="./vendor/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link href="./css/menu-mobile.css" rel="stylesheet">
+    <link href="./css/animate.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="./css/index.css" rel="stylesheet">
+    <link href="./css/reset.css" rel="stylesheet">
+    <script src="./js/reset.js"></script>
+    <script src="./js/jquery-3.6.0.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div id="sidebar">
+        <nav id="mobile-nav">
+            <ul>
+                <li class="nav-item">
+                    <a href="./index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class=" dropdown-btn" href="#">
+                        <i class="bi bi-search"></i> Search
+                    </a>
+                    <div class="dropdown-container" style="display: none;">
+                        <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+                        <a href="#">Teacher 1</a>
+                        <a href="#">Teacher 2</a>
+                        <a href="#">Teacher 3</a>
+                        <a href="#">Teacher 4</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="Course Introduction.html"><i class="fas fa-presentation"></i>&nbsp; Course Introduction</a>
+                </li>
+                <li class="nav-item">
+                    <a href="All Class.html"><i class="fas fa-users-class"></i>&nbsp; All Class</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" onclick="toggle()">Sign In</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" onclick="toggle()">Sign Up</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <header>
+        <div class="header_bottom">
+            <div class="container">
+                <div class="main">
+                    <div class="logo">
+                        <a href="./index.html" title="">
+                            <img src="images/logo.svg" alt="logo">
+                        </a>
+                    </div>
+                    <div class="menu">
+                        <ul>
+                            <li>
+                                <a style="padding-top: 0px;" class="nav-link" href="./Course Introduction.html"><i class="fas fa-presentation"></i>&nbsp; Course Introduction</a>
+                            </li>
+                            <li>
+                                <a style="padding-top: 0px;" class="nav-link" href="./All Class.html"><i class="fas fa-users-class"></i>&nbsp; All Class</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="fsearch">
+
+                        <input type="text" name="search" placeholder="Search.." id="fsearchh">
+                        <button> 
+                                <i class="bi bi-search"></i>
+                                </button>
+
+                    </div>
+                    <div class="right_nav">
+                        <ul>
+                            <li>
+                                <a href="#" title="log in" onclick="toggle()" class="text-uppercase">log in</a>
+                            </li>
+                            <li>
+                                <a href="#" title="log in" onclick="toggle()" class="text-uppercase">sign up</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a class="toggle" id="btn-toggle-sidebar">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <path fill="currentColor"
+                                d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z">
+                            </path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md"></div>
+                <div class="col-md-6">
+                    <div>
+                        <div class="titre">
+                            <h3>Reset Password</h3>
+                            <p>Reset password for account:</p>
+                            <p>traderclass@gmail.com</p>
+                        </div>
+                        <div>
+                            <form action="" id="sen">
+                                <label>New Password</label>
+                                <div class="form-group pass_show">
+                                    <input type="password" id="pas" class="form-control" placeholder="New Password" required pattern="^([A-Z]){1}([\w_\.!@#$%^&*()]+){5,31}$">
+                                    <span id="error2">Start with a capital letter and at least 6 characters</span>
+                                </div>
+                                <label>Confirm Password</label>
+                                <div class="form-group pass_show">
+                                    <input type="password" id="pass" class="form-control" placeholder="Confirm Password">
+                                    <span id="error">Please enter the correct password</span>
+                                </div>
+                                <div id="ches">
+                                    <input type="checkbox" onclick="text()">Show Password
+                                </div>
+                                <input type="submit" value="Reset Password" onclick="sen()" id="sub">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md"></div>
+            </div>
+        </div>
+    </div>
+    <div id="share">
+        <div id="share2">
+            <div id="share3">
+                <p>Account update successful !!!</p>
+            </div>
+            <div id="share4">
+                <a id="bac" href="index.html"><i class="bi bi-arrow-left"></i>&nbsp; Back to main</a>
+            </div>
+        </div>
+    </div>
+    <div id="fade" onclick="bach()"></div>
+    <div class="footer">
+        <div class="text-lg-start text-muted">
+            <section class="" style="
+            padding-top: 5px;
+            background-color: #111319;
+        ">
+                <div class="container text-md-start mt-5">
+                    <div class="row mt-3">
+                        <div class="col-md-3 ">
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                ONICORN MEDIA JOINT STOCK COMPANY
+                            </h6>
+                            <p>
+                                Enterprise code: 0316690536
+                            </p>
+                            <p>Founding date: 2021-01-27</p>
+                            <p>Active taxpayers (who have been granted registration certificates)</p>
+                            <p><img src="./svg/icondangki.svg" alt=""></p>
+                        </div>
+                        <div class="col-md-4 mx-auto">
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                <p style="
+                                opacity: 0;
+                            "> padding</p>
+                            </h6>
+                            <p>
+                                <i class="bi bi-geo-alt-fill"></i> 9 Floor, Vien Dong Building, 14 PhanTon,Da Kao, 1 District, Ho Chi Minh City
+                            </p>
+                            <p>
+                                <i class="bi bi-telephone-fill"></i> +976 1244 6785
+                            </p>
+                            <p>
+                                <i class="bi bi-envelope-fill"></i> hr@onicorn.vn
+                            </p>
+                            <div class="IconConnec">
+                                <li><a href="http://www.facebook.com/"><i class="bi bi-facebook"></i></a></li>
+                                <li><a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a></li>
+                                <li><a href="https://www.youtube.com/"><i class="bi bi-youtube"></i></a></li>
+                            </div>
+                        </div>
+                        <div class="col-md-2 mx-auto">
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                About
+                            </h6>
+                            <p>
+                                <a href="index.html" class="text-reset">Home</a>
+                            </p>
+                            <p>
+                                <a href="./All Class.html" class="text-reset">All Classes</a>
+                            </p>
+                            <p>
+                                <a href="./Contact.html" class="text-reset">Contact</a>
+                            </p>
+                            <p>
+                                <a href="./Privacy.html" class="text-reset">Privacy</a>
+                            </p>
+                            <p>
+                                <a href="./Terms.html" class="text-reset">Terms</a>
+                            </p>
+                            <p>
+                                <a href="./Return&Refund Policy.html" class="text-reset">Return & Refund Policy</a>
+                            </p>
+                        </div>
+                        <div class="col-md-3 ">
+
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Download
+                            </h6>
+                            <a class="app-btn blu flex vert" href="http:apple.com">
+                                <i class="fab fa-apple" style="
+                                margin-left: -20px;
+                            "></i>
+                                <p>Available on the <br/> <span class="big-txt">App Store</span></p>
+                            </a>
+
+                            <a class="app-btn blu flex vert" href="https://play.google.com/">
+                                <i style="
+                                margin-bottom: 3px;
+                            "><img src="./images/CHPlay.png" alt=""></i>
+                                <p>Get it on <br/> <span class="big-txt">Google Play</span></p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="container" style="padding-bottom: 50px;">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <button class="lang"><i class="bi bi-globe" style="margin-left: -10px;margin-right: 10px;"></i> ENGLISH <i class="bi bi-chevron-down" style="margin-left: 10px;margin-right: -10px;"></i></button>
+                        </div>
+                    </div>
+                    <p class="trader"> © 2021 TraderClass</p>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="./js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="./js/wow.min.js" type="text/javascript"></script>
+    <script src="./vendor/OwlCarousel2-2.3.4/dist/owl.carousel.min.js" type="text/javascript"></script>
+    <script src="./js/app.js?v=1" type="text/javascript"></script>
+
+    <script src="./js/teacher.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+</body>
+
+</html>
+<!-- -------------create account--------------- -->
+<div class="create-account">
+    <h1>Create Account</h1>
+    <button class="btn-google"><a onclick="login_with_google()">SIGN UP WITH GOOGLE</a></button>
+    <button class="btn-facebook"><a onclick="login_with_facebook()">SIGN UP WITH FACEBOOK</a></button>
+    <div class="signup-or"><span style="font-size: 11px;">OR</span></div>
+    <label class="signup-label" style="display: flex;margin-left: 20px;">Email</label>
+    <input type="text" class="signup-input">
+    <label class="signup-label" style="display: flex;margin-left: 20px;">Password</label>
+    <input type="text" class="signup-input">
+    <div class="remember-box" style="display: flex;margin-left: 20px;align-items: center;">
+        <input type="checkbox">
+        <span class="checkmark"></span>
+        <p style="font-size: 14px;text-align: left;width: 100%;">Keep me up to date on class events and new releases.</p>
+    </div>
+    <button class="btn-create">CREATE ACCOUNT</button>
+    <div class="sign-in">
+        <p>Already have an account? <a onclick="sign_in()" style="color: #000000;cursor: pointer;text-decoration: underline;">Sign in.</a></p>
+    </div>
+    <div class="text" style="margin-top: 20px!important;">
+        <p>By logging in, you agree to our <br>
+            <a href="" style="color: #A7A9AC;">Privacy Policy</a> and
+            <a href="" style="color: #A7A9AC;">Terms of Service</a>.
+        </p>
+    </div>
+</div>
+<!-- -----------------log-in-------------------- -->
+<div class="log-in">
+    <h1>Log In</h1>
+    <button class="btn-google"><a onclick="login_with_google()">SIGN UP WITH GOOGLE</a></button>
+    <button class="btn-facebook"><a onclick="login_with_facebook()">SIGN UP WITH FACEBOOK</a></button>
+    <div class="signup-or"><span style="font-size: 11px;">OR</span></div>
+    <label class="signup-label" style="display: flex;margin-left: 20px;">Email</label>
+    <input type="text" class="signup-input">
+    <label class="signup-label" style="display: flex;margin-left: 20px;">Password</label>
+    <input type="text" class="signup-input">
+    <button class="btn-create" style="margin-top: 30px;">LOG IN</button>
+    <div class="sign-in">
+        <p>Need an account? <a onclick="toggle()" style="color: #000000;cursor: pointer;text-decoration: underline;">Sign up.</a></p>
+    </div>
+    <div class="text" style="margin-top: 30px!important;">
+        <a onclick="reset_password()" style="cursor: pointer;text-decoration: underline;">
+            <p style="color: #A7A9AC;">Forgot your password?</p>
+        </a>
+    </div>
+    <div class="text" style="margin-top: 30px!important;">
+        <p>By logging in, you agree to our <br>
+            <a href="" style="color: #A7A9AC;">Privacy Policy</a> and
+            <a href="" style="color: #A7A9AC;">Terms of Service</a>.</p>
+    </div>
+</div>
+<!-- ------------login with google---------------- -->
+<div class="login-with-google">
+    <form>
+        <p class="sign-in">Sign in with Google</p>
+        <span></span>
+        <p class="choose">Choose an account</p>
+        <p class="continue" style="position: absolute;top: 121px;left: 232px;font-size: 24px;font-weight: 300;">to continue to</p>
+        <p class="link" style="position: absolute;top: 151px;left: 230px;font-size: 24px;font-weight: 500;color:#06B1E8;">
+            traderclass.vn</p>
+        <div class="user">
+            <!-- ---------1------------- -->
+            <i class="fas fa-user-circle" style="position: absolute;top: 313px;left: 60px;font-size: 40px;"></i>
+            <p style="position: absolute;top: 306px;left: 117px;font-size: 18px;">abc</p>
+            <p style="position: absolute;top: 333px;left: 117px;font-size: 18px;font-size: 14px;">abc@gmail.com</p>
+            <span style="position: absolute;top: 376px;left: 60px;border: 1px solid #C5C0C0;width: 504px;"></span>
+            <!-- ---------2------------- -->
+            <i class="fas fa-user-circle" style="position: absolute;top: 395px;left: 60px;font-size: 40px;"></i>
+            <p style="position: absolute;top: 388px;left: 117px;font-size: 18px;">abc</p>
+            <p style="position: absolute;top: 415px;left: 117px;font-size: 18px;font-size: 14px;">abc@gmail.com</p>
+            <span style="position: absolute;top: 458px;left: 60px;border: 1px solid #C5C0C0;width: 504px;"></span>
+            <!-- ---------3------------- -->
+            <i class="fas fa-user-circle" style="position: absolute;top: 477px;left: 60px;font-size: 40px;"></i>
+            <p class="use" style="position: absolute;top: 488px;left: 117px;font-size: 14px;font-weight: 300;width: 147px;">Use another account</p>
+            <span style="position: absolute;top: 540px;left: 60px;border: 1px solid #C5C0C0;width: 504px;"></span>
+        </div>
+        <p class="text" style="position: absolute;top: 484px;left: 47px;width: 480px;color: #929191;font-size: 18px;font-weight: 300;">
+            To continue, Google will share your name, email address, language preferences, and profile picture with traderclass.vn
+        </p>
+    </form>
+    <ul class="left">
+        <p style="position: absolute;top: 640px;left: 41px;">English</p>
+        <i class="fas fa-chevron-down" style="position: absolute;top: 640px;left: 115px;"></i>
+    </ul>
+    <ul class="right">
+        <p style="position: absolute;top: 640px;left: 419px;">Help</p>
+        <p style="position: absolute;top: 640px;left: 497px;">Privacy</p>
+        <p class="terms" style="position: absolute;top: 640px;left: 603px;">Terms</p>
+    </ul>
+</div>
+<!-- -------------login with facebook------------->
+<div class="login-with-facebook">
+    <form>
+        <img src="./images/image 18.png" style="position: absolute;top: 29px;left: 252px;">
+        <p class="title1" style="position: absolute;top: 141px;left: 109px;font-size: 24px;font-weight: 500;">TraderClass is requesting access to:</p>
+        <p class="title" style="position: absolute;top: 187px;left: 154px;font-size: 14px;font-weight: 300;">your name and profile picture and email address.</p>
+        <i class="fas fa-pencil-alt" style="position: absolute;top: 230.5px;left: 261.5px;color: #06B1E8;"></i>
+        <p class="title" style="position: absolute;top: 224px;left: 287px;color: #06B1E8;font-size: 14px;">Edit Access</p>
+        <p class="title" style="position: absolute;top: 261px;left: 178px;font-size: 12px;color: #5C5C5C;">This does not allow the app to post to Facebook.</p>
+        <button class="btn-continued" style="position: absolute;top: 323px;left: 56px;"><a href="">Continued under the name Abc</a></button>
+        <button class="btn-cancel" style="position: absolute;top: 375px;left: 56px;"><a href="">Cancel</a></button>
+        <p class="warning" style="position: absolute;top: 451px;left: 73px;font-size: 18px;font-weight: 300px;color: #6C6C6C;width: 518px;height: 108px;text-align: center;">By continuing, TraderClass will receive ongoing access to the information you share. Also, Facebook will log when TraderClass accesses that information. <label class="text1">Learn more</label> about this sharing option and the settings you have.</p>
+        <p class="policy" style="position: absolute;top: 606px;left: 193px;">TraderClass <label class="text1">Terms</label> and <label class="text1">Privacy Policy</label></p>
+    </form>
+</div>
+<!-- -----------reset password----------------->
+<div class="reset-password">
+    <h1>Reset Password</h1>
+    <label class="signup-label" style="display: flex;margin-left: 20px;margin-top: 20px;">Email</label>
+    <input type="text" class="signup-input">
+    <button class="btn-create">SEND EMAIL</button>
+    <div class="sign-in">
+        <p>Remember your password? <a onclick="sign_in()" style="color: #000000;cursor: pointer;text-decoration: underline;">Log In.</a></p>
+    </div>
+</div>

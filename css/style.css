@@ -51,11 +51,13 @@ html {
 
 .dropdown-menu {
     background-color: #171921;
+    border-radius: 10px;
+    width: 20%;
+    transform: translate3d(960px, 55px, 0px) !important;
 }
 
 .dropdown-menu a {
     padding: 10px 15px 10px 15px;
-    border-bottom: 1px solid #ffffff33;
     width: 90%;
     margin-left: 10px;
 }
@@ -96,7 +98,21 @@ p a {
     text-align: center;
     margin-bottom: 0;
     padding: 15px;
-    margin-top: 10px;
+    margin-left: 32%;
+    font-weight: 700;
+}
+
+.black button {
+    border: 0px;
+    background-color: black;
+    color: white;
+    margin-left: 22%;
+    margin-right: 5%;
+}
+
+.black {
+    display: flex;
+    justify-content: center;
 }
 
 #tra {
@@ -291,15 +307,19 @@ a:link {
     padding-top: 50px;
 }
 
+.header .header_bottom .mai .logo img {
+    height: 45px;
+}
+
 .header .header_bottom .mai .logo {
-    max-width: 250px;
-    width: 100%;
+    width: 60%;
 }
 
 .header .header_bottom .mai .menu {
     display: flex;
     width: 100%;
-    max-width: 650px;
+    max-width: 35%;
+    justify-content: flex-end;
 }
 
 .header .header_bottom .mai .menu ul {
@@ -327,9 +347,10 @@ a:link {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    width: 30%;
+    width: 5%;
     max-width: 246px;
     padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 .header .header_bottom .mai .right_nav ul {
@@ -380,6 +401,49 @@ a:link {
     fill: #f08e21;
 }
 
+.fsearch {
+    display: flex;
+    width: 60%;
+    margin-right: 20px;
+    justify-content: flex-end;
+}
+
+.fsearch button {
+    border: 1px;
+    background-color: #171921;
+    color: white;
+    font-size: 16px;
+}
+
+.fsearch input {
+    border: 0px;
+    border-radius: 5px;
+    height: 35px;
+    width: 100%;
+    padding: 5px 5px 5px 10px;
+    transition: 0.6s ease-in-out;
+    background-color: black;
+    color: white;
+}
+
+
+/* .fsearch input:focus {
+    width: 100%;
+} */
+
+.cart i {
+    color: white;
+    font-size: 20px;
+}
+
+.cart i:hover {
+    color: #f08e21;
+}
+
+.cart {
+    width: 6%;
+}
+
 @media screen and (min-width: 1024px) {
     .col {
         flex: 0 0 25%;
@@ -387,6 +451,9 @@ a:link {
     }
     #btn-toggle-sidebar {
         display: none;
+    }
+    .header .header_bottom .mai .menu {
+        max-width: 45%;
     }
 }
 
@@ -409,6 +476,9 @@ a:link {
     }
     .header .header_bottom .mai .logo {
         max-width: 240px;
+    }
+    .fsearch {
+        margin-right: 12px;
     }
 }
 
@@ -433,6 +503,7 @@ a:link {
     }
     .header .header_bottom .mai {
         margin-bottom: 31px;
+        justify-content: space-between;
     }
     .header .header_bottom .mai .menu {
         display: none;
@@ -442,6 +513,12 @@ a:link {
     }
     .header .header_bottom .mai .logo {
         max-width: 100%
+    }
+    .fsearch {
+        display: none;
+    }
+    .cart {
+        display: none;
     }
 }
 
@@ -502,5 +579,11 @@ a:link {
         color: white;
         margin-left: 23px;
         margin-top: 10px;
+    }
+    .black p {
+        margin-left: 13%;
+    }
+    .black button {
+        margin-left: 0%;
     }
 }

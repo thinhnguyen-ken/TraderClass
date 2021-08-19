@@ -18,7 +18,6 @@ function myFunction() {
 }
 
 function filterFunction() {
-    console.log("ok");
     var input, filter, ul, li, a, i;
     input = document.getElementById("myInput");
     filter = input.value.toUpperCase();

@@ -12,6 +12,7 @@
     <link href="./css/menu-mobile.css" rel="stylesheet">
     <link href="./css/animate.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/contact.css">
+    <script src="./js/js.js"></script>
     <!--Icon-->
     <title>Contact</title>
 </head>
@@ -25,42 +26,28 @@
                 </li>
                 <li class="nav-item">
                     <a class=" dropdown-btn" href="#">
-                        All Categories <i class="bi bi-chevron-down"></i>
-                    </a>
-                    <div class="dropdown-container" style="display: none;">
-                        <a href="./My Course.html">My Course</a>
-                        <a href="./Course Introduction.html">Course Introduction</a>
-                        <a href="./All Class.html">All Class</a>
-                        <a href="./Contact.html">Contact</a>
-                        <a href="./Privacy.html">Privacy</a>
-                        <a href="./Terms.html">Terms</a>
-                        <a href="./Return&Refund Policy.html">Return & Refund Policy</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class=" dropdown-btn" href="#">
                         <i class="bi bi-search"></i> Search
                     </a>
                     <div class="dropdown-container" style="display: none;">
                         <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
-                        <a href="#">About</a>
-                        <a href="#">Base</a>
-                        <a href="#">Blog</a>
-                        <a href="#">Contact</a>
-                        <a href="#">Custom</a>
-                        <a href="#">Support</a>
-                        <a href="#">Tools</a>
+                        <a href="#">Teacher 1</a>
+                        <a href="#">Teacher 2</a>
+                        <a href="#">Teacher 3</a>
+                        <a href="#">Teacher 4</a>
                     </div>
                 </li>
-
+                <li class="nav-item"><a href="./Course Introduction.html"><i class="fas fa-presentation"></i>&nbsp; Course Introduction</a></li>
+                <li class="nav-item"><a href="./All Class.html"><i class="fas fa-users-class"></i>&nbsp; All Class</a></li>
                 <li class="nav-item">
-                    <a href="./Invite friends.html"> <img class="friend" src="./images/add.png" width="16px" height="16px" style="margin-top: -4px;" alt=""> Invite friends </a>
+                    <a class=" dropdown-btn" href="#">
+                        <img src="./images/avt.png" alt="">
+                    </a>
+                    <div class="dropdown-container" style="display: none;">
+                        <a href="./account.html">Account information</a>
+                        <a href="./My Course.html">My Course</a>
+                        <a href="#">Log out</a>
+                    </div>
                 </li>
-                <li class="nav-item">
-                    <a href="./Log into.html"> <i class="fas fa-shopping-cart"></i> Access all</a>
-                </li>
-                <li class="nav-item"><a href="./account.html">Account information</a></li>
-                <li class="nav-item"> <a href="#">Log out</a></li>
             </ul>
         </nav>
     </div>
@@ -70,48 +57,29 @@
                 <div class="mai">
                     <div class="logo">
                         <a href="./index.html" title="">
-                            <!--img src="images/logo.svg" alt="logo" /-->
-                            TraderClass
+                            <img src="images/logo.svg" alt="logo">
                         </a>
                     </div>
                     <div class="menu">
                         <ul>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link" style="padding-top: 0px;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
-                                    All Categories <i class="bi bi-chevron-down"></i>
-                          </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a style="color: black;" class="dropdown-item" href="./My Course.html">My Course</a>
-                                    <a style="color: black;" class="dropdown-item" href="./Course Introduction.html">Course Introduction</a>
-                                    <a style="color: black;" class="dropdown-item" href="./All Class.html">All Class</a>
-                                    <a style="color: black;" class="dropdown-item" href="./Contact.html">Contact</a>
-                                    <a style="color: black;" class="dropdown-item" href="./Privacy.html">Privacy</a>
-                                    <a style="color: black;" class="dropdown-item" href="./Terms.html">Terms</a>
-                                    <a style="color: black;" class="dropdown-item" href="./Return&Refund Policy.html">Return & Refund Policy</a>
-                                </div>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link" style="padding-top: 0px;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
-                                    <i class="bi bi-search"></i> Search
-                                </a>
-                                <div class="dropdown-menu search" aria-labelledby="navbarDropdown">
-                                    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
-                                    <a class="dropdown-item" href="#">About <i class="fas fa-chevron-right" style="float: right;"></i></a>
-                                    <a class="dropdown-item" href="#">Base <i class="fas fa-chevron-right" style="float: right;"></i></a>
-                                    <a class="dropdown-item" href="#">Blog <i class="fas fa-chevron-right" style="float: right;"></i></a>
-                                    <a class="dropdown-item" href="#">Contact <i class="fas fa-chevron-right" style="float: right;"></i></a>
-                                    <a class="dropdown-item" href="#">Custom <i class="fas fa-chevron-right" style="float: right;"></i></a>
-                                    <a class="dropdown-item" href="#">Support <i class="fas fa-chevron-right" style="float: right;"></i></a>
-                                    <a class="dropdown-item" href="#">Tools <i class="fas fa-chevron-right" style="float: right;"></i></a>
-                                </div>
+                            <li>
+                                <a style="padding-top: 0px;" class="nav-link" href="./Course Introduction.html"><i class="fas fa-presentation"></i>&nbsp; Course Introduction</a>
                             </li>
                             <li>
-                                <a style="padding-top: 0px;" class="nav-link" href="./Invite friends.html"> <img class="friend" src="./images/add-friend.png" width="16px" height="16px" style="margin-top: -4px;" alt=""> Invite friends </a>
-                            </li>
-                            <li>
-                                <a style="padding-top: 0px;" class="nav-link" href="./Log into.html"> <i class="fas fa-shopping-cart"></i> Access all</a>
+                                <a style="padding-top: 0px;" class="nav-link" href="./All Class.html"><i class="fas fa-users-class"></i>&nbsp; All Class</a>
                             </li>
                         </ul>
+                    </div>
+                    <div class="fsearch">
+
+                        <input type="text" name="search" placeholder="Search.." id="fsearchh">
+                        <button> 
+                                <i class="bi bi-search"></i>
+                                </button>
+
+                    </div>
+                    <div class="cart">
+                        <a href="Log into.html"><i class="fas fa-shopping-cart"></i></a>
                     </div>
                     <div class="right_nav">
                         <a class="nav-link" style="padding-top: 0px;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
@@ -119,6 +87,7 @@
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a style="color: black;" class="dropdown-item" href="./account.html">Account information</a>
+                            <a style="color: black;" class="dropdown-item" href="./My Course.html">My Course</a>
                             <a style="color: black;" class="dropdown-item" href="#">Log out</a>
                         </div>
                         <!-- <div class="dropdown">
@@ -139,8 +108,9 @@
                 </div>
             </div>
         </div>
-        <div class="black">
-            <p>Complete your payment for instant access!</p>
+        <div class="black" id="black">
+            <p>GET 75% DISCOUNT FOR THE ENTIRE COURSE. DURATION 31/8.</p>
+            <button onclick="clblack()">x</button>
         </div>
     </div>
     <div class="main">
@@ -228,7 +198,7 @@
                                 <p>Available on the <br/> <span class="big-txt">App Store</span></p>
                             </a>
 
-                            <a class="app-btn blu flex vert" href="http:google.com">
+                            <a class="app-btn blu flex vert" href="https://play.google.com/">
                                 <i style="
                                 margin-bottom: 3px;
                             "><img src="./images/CHPlay.png" alt=""></i>

@@ -24,6 +24,7 @@ input {
     height: 40px;
     border-radius: 5px;
     color: white;
+    padding: 12px;
 }
 
 .static {
