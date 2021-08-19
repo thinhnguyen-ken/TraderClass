@@ -42,3 +42,7 @@ function up3() {
     a = a - 1;
     document.getElementById("upp").innerHTML = a;
 }
+
+function classify() {
+    window.location.href = "MasterClass.html";
+}
