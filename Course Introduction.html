@@ -39,6 +39,7 @@
                 </li>
                 <li class="nav-item"><a href="./Course Introduction.html"><i class="fas fa-presentation"></i>&nbsp; Course Introduction</a></li>
                 <li class="nav-item"><a href="./All Class.html"><i class="fas fa-users-class"></i>&nbsp; All Class</a></li>
+                <li class="nav-item"> <a href="Log into.html"><i class="fas fa-shopping-cart"></i>&nbsp; Cart</a></li>
                 <li class="nav-item">
                     <a class=" dropdown-btn" href="#">
                         <img src="./images/avt.png" alt="">
@@ -58,7 +59,7 @@
                 <div class="mai">
                     <div class="logo">
                         <a href="./index.html" title="">
-                            <img src="images/logo.svg" alt="logo">
+                            TraderClass
                         </a>
                     </div>
                     <div class="menu">
@@ -72,12 +73,14 @@
                         </ul>
                     </div>
                     <div class="fsearch">
-
-                        <input type="text" name="search" placeholder="Search.." id="fsearchh">
-                        <button> 
-                                <i class="bi bi-search"></i>
-                                </button>
-
+                        <input list="brow" type="text" name="search" placeholder="Search.." id="fsearchh">
+                        <datalist id="brow">
+                            <option value="Jarratt Davis">Teacher Forex Trader</option>
+                            <option value="Jarratt Davis">Teacher Forex Trader</option>
+                            <option value="Jarratt Davis">Teacher Forex Trader</option>
+                            <option value="Jarratt Davis">Teacher Forex Trader</option>
+                          </datalist>
+                        <button> <i class="bi bi-search"></i></button>
                     </div>
                     <div class="cart">
                         <a href="Log into.html"><i class="fas fa-shopping-cart"></i></a>
@@ -86,7 +89,7 @@
                         <a class="nav-link" style="padding-top: 0px;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
                             <img src="./svg/avt.svg" alt="">
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <div class="dropdown-menu" id="dropdown-menu1" aria-labelledby="navbarDropdown">
                             <a style="color: black;" class="dropdown-item" href="./account.html">Account information</a>
                             <a style="color: black;" class="dropdown-item" href="./My Course.html">My Course</a>
                             <a style="color: black;" class="dropdown-item" href="#">Log out</a>
@@ -134,11 +137,17 @@
                         <a href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
                             All field  &ensp; <i class="bi bi-chevron-down"></i>
                           </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Something else here</a>
+                        <div class="dropdown-menu" id="dropdown-menu2" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">
+                                <p>Action</p>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <p>Another action</p>
+                            </a>
+                            <!-- <div class="dropdown-divider"></div> -->
+                            <a class="dropdown-item" href="#">
+                                <p>Something else here</p>
+                            </a>
                         </div>
                     </div>
                     <div class="im">
@@ -173,7 +182,7 @@
                         </div>
                         <div class="col-md-3" id="col-md-3">
                             <button><p> <a href="./Register.html"><i class="bi bi-plus-lg"></i> &ensp;Take part in the course</a></p></button>
-                            <button id="but"><p><img width="12px" style="margin-bottom: 3px;"  src="./images/nextvideo.png" alt="">&ensp; Next video</p></button>
+                            <button id="but" onclick="nextvideo('./mp4/Teacher2.mp4')"><p><img width="12px" style="margin-bottom: 3px;"  src="./images/nextvideo.png" alt="">&ensp; Next video</p></button>
                         </div>
                     </div>
                     <p style="font-size: 13px; color: white;">From litigator to ultramarathoner to bestselling author to head instructor and VP at Peloton, Robin Arzón keeps proving it’s never too late to level up in your life. Now, she’s ready to teach you how building your mental strength can

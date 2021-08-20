@@ -49,14 +49,28 @@ html {
     border-radius: 3px;
 }
 
-.dropdown-menu {
+#dropdown-menu1 {
     background-color: #171921;
     border-radius: 10px;
     width: 20%;
     transform: translate3d(960px, 55px, 0px) !important;
 }
 
-.dropdown-menu a {
+#dropdown-menu2 {
+    background-color: #171921;
+    border-radius: 10px;
+    width: auto;
+}
+
+#dropdown-menu2 a {
+    padding: 10px 15px 10px 15px;
+}
+
+#dropdown-menu2 a p {
+    margin-bottom: 0;
+}
+
+#dropdown-menu1 a {
     padding: 10px 15px 10px 15px;
     width: 90%;
     margin-left: 10px;
@@ -444,6 +458,10 @@ a:link {
     width: 6%;
 }
 
+.logo a {
+    color: white;
+}
+
 @media screen and (min-width: 1024px) {
     .col {
         flex: 0 0 25%;
@@ -537,6 +555,9 @@ a:link {
         color: white;
         margin-left: 20px;
         margin-top: 10px;
+    }
+    #dropdown-menu2 {
+        transform: translate3d(15px, 22px, 0px) !important;
     }
 }
 

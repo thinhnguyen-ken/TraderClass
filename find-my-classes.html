@@ -72,12 +72,14 @@
                         </ul>
                     </div>
                     <div class="fsearch">
-
-                        <input type="text" name="search" placeholder="Search.." id="fsearchh">
-                        <button> 
-                                <i class="bi bi-search"></i>
-                                </button>
-
+                        <input list="brow" type="text" name="search" placeholder="Search.." id="fsearchh">
+                        <datalist id="brow">
+                            <option value="Jarratt Davis">Teacher Forex Trader</option>
+                            <option value="Jarratt Davis">Teacher Forex Trader</option>
+                            <option value="Jarratt Davis">Teacher Forex Trader</option>
+                            <option value="Jarratt Davis">Teacher Forex Trader</option>
+                          </datalist>
+                        <button> <i class="bi bi-search"></i></button>
                     </div>
                     <div class="cart">
                         <a href="Log into.html"><i class="fas fa-shopping-cart"></i></a>
@@ -86,7 +88,7 @@
                         <a class="nav-link" style="padding-top: 0px;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
                             <img src="./svg/avt.svg" alt="">
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <div class="dropdown-menu" id="dropdown-menu1" aria-labelledby="navbarDropdown">
                             <a style="color: black;" class="dropdown-item" href="./account.html">Account information</a>
                             <a style="color: black;" class="dropdown-item" href="./My Course.html">My Course</a>
                             <a style="color: black;" class="dropdown-item" href="#">Log out</a>

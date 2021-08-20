@@ -46,6 +46,21 @@ function paymen(int) {
     }
 }
 
+function choose() {
+    document.getElementById("promo").style.display = "block";
+    document.getElementById("fade").style.display = "block";
+    // scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    // scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+    //     window.onscroll = function() {
+    //         window.scrollTo(scrollLeft, scrollTop);
+    //     };
+}
+
+function promo_close() {
+    document.getElementById("promo").style.display = "none";
+    document.getElementById("fade").style.display = "none";
+    // window.onscroll = function() {};
+}
 var a = 1;
 
 function tick(int) {
