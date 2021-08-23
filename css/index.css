@@ -1515,6 +1515,15 @@ video {
     }
 }
 
+@media screen and (max-width: 1920px) {
+    .banner_home .main_item .item-left {
+        width: 33%;
+    }
+    video {
+        width: 100%;
+    }
+}
+
 @media screen and (max-width: 1440px) {
     .trader_teacher .owl-carousel .item .info {
         top: 76%;

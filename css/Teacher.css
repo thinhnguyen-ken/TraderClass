@@ -626,6 +626,13 @@
         }
     }
     
+    @media screen and (max-width: 1920px) {
+        .text-center {
+            top: 94%;
+            left: 45%;
+        }
+    }
+    
     @media screen and (max-width: 1440px) {
         .text-center {
             top: 80%;
