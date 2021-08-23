@@ -106,12 +106,14 @@ function toggle() {
     var login_with_google = document.querySelector('.login-with-google');
     var login_with_facebook = document.querySelector('.login-with-facebook');
     var reset_password = document.querySelector('.reset-password');
+    var sidebar = document.querySelector('#sidebar');
 
     header.classList.add('active');
     banner.classList.add('active');
     create_account.classList.add('active');
     create_account.classList.remove('active2');
     log_in.classList.remove('active');
+    sidebar.style.display = "none";
 
     window.addEventListener('mouseup', function my_function(e) {
         if (document.querySelector('.create-account').contains(e.target)) {
@@ -124,6 +126,7 @@ function toggle() {
             login_with_google.classList.remove('active');
             login_with_facebook.classList.remove('active');
             reset_password.classList.remove('active');
+            sidebar.style.display = "block";
         }
     });
 }
