@@ -1,7 +1,7 @@
 var coll = document.getElementsByClassName("collapsible");
-var i;
+var i = 0;
 
-for (i = 0; i < coll.length; i++) {
+for (i; i < coll.length; i++) {
     coll[i].addEventListener("click", function() {
         this.classList.toggle("active");
         var content = this.nextElementSibling;
@@ -66,11 +66,11 @@ function lightbox_open(name) {
     window.scrollTo(0, 0);
     document.getElementById('light').style.display = 'block';
     document.getElementById('fade').style.display = 'block';
-    scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
-        window.onscroll = function() {
-            window.scrollTo(scrollLeft, scrollTop);
-        };
+    // scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    // scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+    //     window.onscroll = function() {
+    //         window.scrollTo(scrollLeft, scrollTop);
+    //     };
     lightBoxVideo.play();
 }
 
@@ -78,11 +78,11 @@ function share_open() {
     window.scrollTo(0, 0);
     document.getElementById('share').style.display = 'block';
     document.getElementById('fade').style.display = 'block';
-    scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
-        window.onscroll = function() {
-            window.scrollTo(scrollLeft, scrollTop);
-        };
+    // scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    // scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+    //     window.onscroll = function() {
+    //         window.scrollTo(scrollLeft, scrollTop);
+    //     };
 }
 
 function lightbox_close() {
@@ -166,4 +166,22 @@ function hover(int) {
 
 function body() {
     document.getElementById('1').style.borderBottom = "2px solid #ffffff";
+}
+
+function nextvideo(name) {
+    var videoFile = name;
+    $('.wrappe video source').attr('src', videoFile);
+    $(".wrappe video")[0].load();
+}
+
+function off() {
+    document.getElementById("video").pause();
+    document.getElementById("playpause").style.display = "block";
+    document.getElementById("offvideo").style.display = "none";
+}
+
+function on() {
+    document.getElementById("video").play();
+    document.getElementById("playpause").style.display = "none";
+    document.getElementById("offvideo").style.display = "block";
 }

@@ -144,6 +144,15 @@
             overflow: hidden;
             border-top: 0px solid #e9ecef;
         }
+        
+        .offvideo {
+            position: absolute;
+            background-color: #66339900;
+            width: 96%;
+            height: 76%;
+            top: 0;
+            display: none;
+        }
         /*Ipad ngang(1024 x 768)*/
         
         @media screen and (max-width: 1024px) {
@@ -155,6 +164,12 @@
             }
             .playpause img {
                 transform: translate(0px, 200%);
+            }
+            .offvideo {
+                position: absolute;
+                background-color: #66339900;
+                width: 96%;
+                height: 45%;
             }
         }
         /*Ipad dọc(768 x 1024)*/
@@ -171,7 +186,8 @@
                 height: 32%;
             }
             .playpause img {
-                transform: translate(0px, 135%);
+                transform: translate(0px, 201%);
+                width: 50px;
             }
             .playpause {
                 height: 38%;
@@ -208,11 +224,17 @@
             .playpause {
                 height: 100%;
             }
+            .playpause img {
+                transform: translate(0px, 174%);
+            }
         }
         
         @media screen and (max-width: 375px) {
             .col-md-3 button p a {
                 font-size: 11px;
+            }
+            .playpause img {
+                transform: translate(0px, 130%);
             }
         }
         
@@ -223,8 +245,8 @@
         
         @media screen and (max-width: 320px) {
             .playpause img {
-                transform: translate(0px, 170%);
-                width: 36px;
+                transform: translate(0px, 207%);
+                width: 29px;
             }
             #row {
                 height: 490px;
@@ -237,7 +259,7 @@
         
         @media screen and (max-width: 240px) {
             .playpause img {
-                transform: translate(0px, 123%);
-                width: 36px;
+                transform: translate(0px, 168%);
+                width: 25px;
             }
         }

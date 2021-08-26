@@ -65,10 +65,10 @@
                     <div class="menu">
                         <ul>
                             <li>
-                                <a style="padding-top: 0px;" class="nav-link" href="./Course Introduction.html"><i class="fas fa-presentation"></i>&nbsp; Course Introduction</a>
+                                <a style="padding-top: 0px;" class="nav-link" href="./All Class.html"><i class="fas fa-users-class"></i>&nbsp; All Class</a>
                             </li>
                             <li>
-                                <a style="padding-top: 0px;" class="nav-link" href="./All Class.html"><i class="fas fa-users-class"></i>&nbsp; All Class</a>
+                                <a style="padding-top: 0px;" class="nav-link" href="./Course Introduction.html"><i class="fas fa-presentation"></i>&nbsp; Course Introduction</a>
                             </li>
                         </ul>
                     </div>
@@ -155,11 +155,12 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
-                    <div class="wrappe" onclick="playvideo()">
-                        <video class="video" controls>
+                    <div class="wrappe">
+                        <video class="video" id="video" controls>
                         <source src="./mp4/Teacher1.mp4" type="video/mp4">
                       </video>
-                        <div class="playpause"><img src="./images/media_play_pause_resume.png" alt=""></div>
+                        <div class="playpause" id="playpause" onclick="on()"><img src="./images/media_play_pause_resume.png" alt=""></div>
+                        <div class="offvideo" id="offvideo" onclick="off()"></div>
                     </div>
                     <div class="in">
                         <p>From litigator to ultramarathoner to bestselling author to head instructor and VP at Peloton, Robin Arzón keeps proving it’s never too late to level up in your life. Now, she’s ready to teach you how building your mental strength
@@ -579,7 +580,6 @@
             </section>
         </div>
     </div>
-    <script src="./js/Course Introduction.js"></script>
     <script src="./js/teacher.js"></script>
     <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
 
