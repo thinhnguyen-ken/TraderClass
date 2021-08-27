@@ -128,9 +128,16 @@
         }
         
         .imt {
+            position: absolute;
+            width: 100%;
+        }
+        
+        .commet {
+            position: relative;
             overflow-x: hidden;
             overflow-y: auto;
-            height: 35%;
+            height: 49%;
+            margin-bottom: 70%;
         }
         
         .imt .com {
@@ -207,6 +214,21 @@
             .col-md-3 button p {
                 font-size: 11px;
             }
+            .commet {
+                height: 50%;
+                margin-bottom: 90%;
+            }
+            #google {
+                width: 36px;
+                height: 35px;
+            }
+            #google p {
+                text-align: center;
+                padding-top: 6px;
+            }
+            #commet {
+                font-size: 13px;
+            }
         }
         /*Tablet nhỏ(480 x 640)*/
         
@@ -227,6 +249,17 @@
             .playpause img {
                 transform: translate(0px, 174%);
             }
+            .commet {
+                height: 45%;
+                margin-bottom: 90%
+            }
+        }
+        
+        @media screen and(max-width: 425px) {
+            .commet {
+                height: 40%;
+                margin-bottom: 100%;
+            }
         }
         
         @media screen and (max-width: 375px) {
@@ -235,6 +268,10 @@
             }
             .playpause img {
                 transform: translate(0px, 130%);
+            }
+            .commet {
+                height: 40%;
+                margin-bottom: 100%;
             }
         }
         
@@ -254,6 +291,10 @@
             .col-md-3 button p a {
                 font-size: 11px;
             }
+            .commet {
+                height: 30%;
+                margin-bottom: 100%;
+            }
         }
         /*Smart phone nhỏ*/
         
@@ -261,5 +302,9 @@
             .playpause img {
                 transform: translate(0px, 168%);
                 width: 25px;
+            }
+            .commet {
+                height: 30%;
+                margin-bottom: 133%;
             }
         }
